@@ -50,6 +50,7 @@ public class OptimizationBasicInterpreter extends BasicInterpreter {
             case Type.SHORT:
                 return SHORT_VALUE;
             case Type.OBJECT:
+            case Type.ARRAY:
                 return new BasicValue(type);
             default:
                 return super.newValue(type);
